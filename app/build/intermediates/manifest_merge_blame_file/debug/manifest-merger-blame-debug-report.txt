@@ -1,0 +1,210 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="hatem.ali.leoniv07"
+4    android:targetSandboxVersion="1"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:8:5-79
+12-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:8:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:9:5-67
+13-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:9:22-64
+14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+14-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\d06c7287e575da31825e505b198a864d\jetified-installreferrer-1.0\AndroidManifest.xml:9:5-110
+14-->[com.android.installreferrer:installreferrer:1.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\d06c7287e575da31825e505b198a864d\jetified-installreferrer-1.0\AndroidManifest.xml:9:22-107
+15
+16    <application
+16-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:11:5-60:19
+17        android:allowBackup="true"
+17-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:12:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.3.0-beta01] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\88b97c4aa169ceac19dd77abeba43391\core-1.3.0-beta01\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:hardwareAccelerated="false"
+20-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:13:9-44
+21        android:icon="@drawable/logo_leoni"
+21-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:14:9-44
+22        android:label="@string/app_name"
+22-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:15:9-41
+23        android:largeHeap="true"
+23-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:16:9-33
+24        android:networkSecurityConfig="@xml/network_security_config"
+24-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:17:9-69
+25        android:roundIcon="@mipmap/ic_launcher"
+25-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:18:9-48
+26        android:supportsRtl="true"
+26-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:19:9-35
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme"
+28-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:20:9-40
+29        android:usesCleartextTraffic="true" >
+29-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:21:9-44
+30        <activity
+30-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:23:9-133
+31            android:name="hatem.ali.leoni.activities.EspaceemployeActivity"
+31-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:23:19-67
+32            android:parentActivityName="hatem.ali.leoni.activities.MainActivity" />
+32-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:23:68-121
+33        <activity android:name="hatem.ali.leoni.activities.AfficheStageActivity" />
+33-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:24:9-69
+33-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:24:19-66
+34        <activity android:name="hatem.ali.leoni.activities.AfficheEmploiActivity" />
+34-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:25:9-70
+34-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:25:19-67
+35        <activity android:name="hatem.ali.leoni.activities.AfficheCongeActivity" />
+35-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:26:9-69
+35-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:26:19-66
+36        <activity android:name="hatem.ali.leoni.activities.MyCongeActivity" />
+36-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:27:9-64
+36-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:27:19-61
+37        <activity android:name="hatem.ali.leoni.activities.ReclamationActivity" />
+37-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:28:9-68
+37-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:28:19-65
+38        <activity android:name="hatem.ali.leoni.activities.CongeActivity" />
+38-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:29:9-62
+38-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:29:19-59
+39        <activity android:name="hatem.ali.leoni.activities.CvActivity" />
+39-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:30:9-60
+39-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:30:19-56
+40        <activity android:name="hatem.ali.leoni.activities.AllUsersActivity" />
+40-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:31:9-65
+40-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:31:19-62
+41        <activity android:name="hatem.ali.leoni.activities.AfficheventActivity" />
+41-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:32:9-68
+41-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:32:19-65
+42        <activity android:name="hatem.ali.leoni.activities.UserActivity" />
+42-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:33:9-61
+42-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:33:19-58
+43        <activity android:name="hatem.ali.leoni.activities.profileActivity" />
+43-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:34:9-64
+43-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:34:19-61
+44        <activity
+44-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:35:9-123
+45            android:name="hatem.ali.leoni.activities.EspacemembreActivity"
+45-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:35:19-66
+46            android:parentActivityName="hatem.ali.leoni.activities.MainActivity" />
+46-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:35:67-120
+47        <activity
+47-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:36:9-121
+48            android:name="hatem.ali.leoni.activities.actualite_Activity"
+48-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:36:19-64
+49            android:parentActivityName="hatem.ali.leoni.activities.MainActivity" />
+49-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:36:65-118
+50        <activity android:name="hatem.ali.leoni.activities.LoginActivity" />
+50-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:37:9-62
+50-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:37:19-59
+51        <activity android:name="hatem.ali.leoni.activities.RegisterActivity" />
+51-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:38:9-65
+51-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:38:19-62
+52        <activity android:name="hatem.ali.leoni.helpers.buttonFlier" />
+52-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:39:9-57
+52-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:39:19-54
+53        <activity
+53-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:40:9-121
+54            android:name="hatem.ali.leoni.activities.aboutLeoniActivity"
+54-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:40:19-64
+55            android:parentActivityName="hatem.ali.leoni.activities.MainActivity" />
+55-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:40:65-118
+56        <activity android:name="hatem.ali.leoni.activities.ActivityStatistique" />
+56-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:41:9-68
+56-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:41:19-65
+57        <activity android:name="hatem.ali.leoni.activities.EvenementActivity" />
+57-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:42:9-66
+57-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:42:19-63
+58        <activity android:name="hatem.ali.leoni.activities.PrixActivity" />
+58-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:43:9-61
+58-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:43:19-58
+59        <activity android:name="hatem.ali.leoni.activities.historique" />
+59-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:44:9-59
+59-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:44:19-56
+60        <activity android:name="hatem.ali.leoni.activities.ActivityInscription" />
+60-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:45:9-68
+60-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:45:19-65
+61        <activity
+61-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:46:9-55:20
+62            android:name="hatem.ali.leoni.activities.MainActivity"
+62-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:47:13-52
+63            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen" >
+63-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:48:13-80
+64            <intent-filter>
+64-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:49:13-54:29
+65                <action android:name="android.intent.action.MAIN" />
+65-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:50:17-69
+65-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:50:25-66
+66                <action android:name="android.intent.action.VIEW" />
+66-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:51:17-69
+66-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:51:25-66
+67
+68                <category android:name="android.intent.category.LAUNCHER" />
+68-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:53:17-77
+68-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:53:27-74
+69            </intent-filter>
+70        </activity>
+71
+72        <meta-data
+72-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:57:9-59:57
+73            android:name="preloaded_fonts"
+73-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:58:13-43
+74            android:resource="@array/preloaded_fonts" />
+74-->C:\Users\Asus\Desktop\Leoniv07\app\src\main\AndroidManifest.xml:59:13-54
+75
+76        <provider
+76-->[com.squareup.picasso:picasso:2.71828] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\19b5530eb8ab680f2e1175d27b8dd3ee\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+77            android:name="com.squareup.picasso.PicassoProvider"
+77-->[com.squareup.picasso:picasso:2.71828] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\19b5530eb8ab680f2e1175d27b8dd3ee\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+78            android:authorities="hatem.ali.leoniv07.com.squareup.picasso"
+78-->[com.squareup.picasso:picasso:2.71828] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\19b5530eb8ab680f2e1175d27b8dd3ee\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+79            android:exported="false" />
+79-->[com.squareup.picasso:picasso:2.71828] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\19b5530eb8ab680f2e1175d27b8dd3ee\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+80        <provider
+80-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+81            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+81-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+82            android:authorities="hatem.ali.leoniv07.lifecycle-process"
+82-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+83            android:exported="false"
+83-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+84            android:multiprocess="true" />
+84-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\58629c19fa6c616abd60edc0d2bb07b8\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+85        <!--
+86         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+87         with the application context. This config is merged in with the host app's manifest,
+88         but there can only be one provider with the same authority activated at any given
+89         point; so if the end user has two or more different apps that use Facebook SDK, only the
+90         first one will be able to use the provider. To work around this problem, we use the
+91         following placeholder in the authority to identify each host application as if it was
+92         a completely different provider.
+93        -->
+94        <provider
+94-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:39:9-42:40
+95            android:name="com.facebook.internal.FacebookInitProvider"
+95-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:40:13-70
+96            android:authorities="hatem.ali.leoniv07.FacebookInitProvider"
+96-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:41:13-72
+97            android:exported="false" />
+97-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:42:13-37
+98
+99        <receiver
+99-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:44:9-50:20
+100            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+100-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:45:13-86
+101            android:exported="false" >
+101-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:46:13-37
+102            <intent-filter>
+102-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:47:13-49:29
+103                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+103-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:48:17-95
+103-->[com.facebook.android:facebook-core:6.5.1] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\3268fcf497470781179f8c063538b4a1\jetified-facebook-core-6.5.1\AndroidManifest.xml:48:25-92
+104            </intent-filter>
+105        </receiver>
+106    </application>
+107
+108</manifest>

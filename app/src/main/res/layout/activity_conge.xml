@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="hatem.ali.leoni.activities.CongeActivity">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/card_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        app:cardBackgroundColor="#E7EDF1"
+        app:cardElevation="6dp"
+        app:cardMaxElevation="6dp"
+        app:contentPadding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/leoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arial_black"
+                android:gravity="fill_vertical"
+                android:text="Demande congé"
+                android:textColor="#004089"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idUser"
+        android:visibility="gone"
+        android:text="id employé"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Nom de l'employé :  "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nomUser"
+            android:textColor="#000"
+            android:text="nom employé"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:text=" "
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/prenomUser"
+            android:textColor="#000"
+            android:text="prenom employé"
+
+            />
+
+
+    </LinearLayout>
+
+    <!-- Text Label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Type Congé :"
+
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/typeconge"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+
+            />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/outputSpinnerTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONGE !"
+        android:visibility="gone"
+        android:textColor="#000"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date début : "
+            tools:ignore="MissingConstraints" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/datedebut"
+                android:hint="Debut"
+                android:textColor="#000"
+                android:inputType="date"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date fin : "
+             />
+
+        <com.google.android.material.textfield.TextInputLayout
+           android:paddingLeft="28dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/datefin"
+                android:hint="Fin"
+                android:inputType="date"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cause"
+        android:maxLines="2"
+        android:textColor="#000"
+        android:hint="Cause"
+        />
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50dp"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/allconge"
+        android:layout_gravity="right"
+        android:text="Mes démandes"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_weight="1"
+        />
+
+    <Button
+        android:id="@+id/btnSendconge"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:clickable="true"
+        android:background="@drawable/centre_button"
+        android:text="send"
+        android:textColor="@color/whiteTextColor" />
+
+
+</LinearLayout>
+
+</LinearLayout>

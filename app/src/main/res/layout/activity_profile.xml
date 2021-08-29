@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="hatem.ali.leoni.activities.profileActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/background"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                >
+                <ImageView
+                    android:id="@+id/btnEdit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="25dp"
+                    android:src="@mipmap/ic_launcher" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/liner_profileimage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/background"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-100dp"
+                android:orientation="horizontal"
+                >
+               <!-- <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgProfile"
+
+                    civ_border_width="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/event3" />-->
+              <!--  <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btnImageUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:layout_marginBottom="5dp"
+                    android:visibility="invisible" />-->
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/liner_profileimage"
+                android:layout_marginTop="5dp"
+
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/idprofile"
+                    android:text="success"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:id="@+id/success"
+                    android:text="success"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="Full Name" />
+
+                <EditText
+                    android:id="@+id/pseudo"
+                    android:text="pseudo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:inputType="text"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="Email" />
+                <EditText
+                    android:id="@+id/email"
+                    android:text="email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:inputType="textEmailAddress"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="Phone Number" />
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:inputType="number"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="Password" />
+                <EditText
+                    android:id="@+id/password"
+                    android:text="password"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:paddingLeft="15dp" />
+               <!-- <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="15dp"
+                    android:text="Address" />
+                <EditText
+                    android:id="@+id/edtAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:gravity="start"
+
+                    android:inputType="textPostalAddress"
+                    android:maxLength="30"
+                    android:paddingLeft="15dp" />-->
+                >
+            </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Retour "
+                android:layout_weight="1"
+                android:id="@+id/returnespace"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text=" Modifier "
+                android:id="@+id/updateProfile"/>
+
+</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

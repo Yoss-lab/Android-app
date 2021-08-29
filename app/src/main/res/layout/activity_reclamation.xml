@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hatem.ali.leoni.hatem.ali.leoni.activities.ReclamationActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#125456"
+        android:text="RECLAMATION"/>
+
+    <TextView
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:text="Envoyer votre reclamation en toute sécurité"
+        />
+
+    <EditText
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minLines="5"
+        android:id="@+id/reclamation"/>
+
+    <Button
+        android:id="@+id/btnReclamation"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/centre_button"
+        android:text=" envoyer "
+        android:layout_marginTop="50dp"
+        android:textColor="@color/whiteTextColor" />
+
+</LinearLayout>

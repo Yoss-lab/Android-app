@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hatem.ali.leoni.activities.MainActivity">
+
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageView_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bg" />
+
+
+    <ImageView
+        android:id="@+id/imageView_bg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_bg"
+        app:srcCompat="@drawable/bg2" />
+
+    <ImageView
+        android:id="@+id/imageView_logo"
+        android:layout_width="237dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bg"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/logo2" />
+
+
+    <ImageView
+        android:id="@+id/imageView_slogan2"
+        android:layout_width="336dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11"
+        app:srcCompat="@drawable/slogan_2" />
+
+    <ImageView
+        android:id="@+id/imageView_Car"
+        android:layout_width="401dp"
+        android:layout_height="355dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/car2" />
+
+    <ImageView
+        android:id="@+id/imageView_Slogan"
+        android:layout_width="292dp"
+        android:layout_height="203dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_bg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/slogan" />
+
+    <ImageView
+        android:id="@+id/imageView_Contact"
+        android:layout_width="269dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_bg"
+        app:layout_constraintEnd_toEndOf="@+id/imageView_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_Car"
+        app:srcCompat="@drawable/contact2" />
+
+    <TextView
+        android:id="@+id/leoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_black"
+        android:gravity="fill_vertical"
+        android:text="LEONI"
+        android:textColor="#004089"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/youtube_player_view"
+        app:layout_constraintBottom_toTopOf="@id/about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/corporate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:gravity="fill_vertical"
+        android:text="CORPORATE"
+        android:textColor="#004089"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/leoni"
+        app:layout_constraintStart_toEndOf="@id/leoni"
+        app:layout_constraintTop_toTopOf="@id/leoni"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/selector_animation"
+        android:fontFamily="@font/arial_black"
+        android:text="LEONI"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/workerspace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="@id/imageView_bg2" />
+
+    <Button
+        android:id="@+id/userspace"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/selector_animation"
+        android:fontFamily="@font/arial"
+        android:text="actualité"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bg"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/workerspace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/selector_animation"
+        android:fontFamily="@font/arial"
+        android:text="Espace member"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/userspace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+        android:id="@+id/youtube_player_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:autoPlay="false"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_Contact"
+        app:layout_constraintTop_toTopOf="@+id/imageView_bg"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:showFullScreenButton="true"
+        app:videoId="YXP1_Sn8aXk"
+        tools:layout_editor_absoluteX="16dp" >
+
+    </com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView>
+
+
+
+    <View
+        android:id="@+id/view_horizontal_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/about"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+    <View
+        android:id="@+id/view_horizontal_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/about"
+        app:layout_constraintBottom_toTopOf="@+id/workerspace"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <View
+        android:id="@+id/view_horizontal_3"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/workerspace"
+        app:layout_constraintBottom_toTopOf="@+id/userspace"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+    <View
+        android:id="@+id/view_horizontal_4"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@+id/userspace"
+        app:layout_constraintHorizontal_bias="0.5"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/yossra"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/userspace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/facebook"
+            android:clickable="true"/>
+
+        <View
+            android:id="@+id/view_vertical_1"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_yt"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/youtube" />
+
+        <View
+            android:id="@+id/view_vertical_2"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_in"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/ic_linkedin" />
+
+        <View
+            android:id="@+id/view_vertical_3"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_inst"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/instagram" />
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

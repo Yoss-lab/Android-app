@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/image_emploi"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/event3"
+        android:scaleType="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/title_emploi"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintTop_toBottomOf="@+id/image_emploi"
+        app:layout_constraintBottom_toTopOf="@+id/desc_emploi"
+        />
+
+    <TextView
+        android:id="@+id/desc_emploi"
+        android:textSize="12sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/title_emploi"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/by_emploi"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/desc_emploi"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Date"
+        android:textStyle="bold"
+        android:id="@+id/date_emploi"
+        app:layout_constraintTop_toBottomOf="@+id/by_emploi"
+        android:layout_marginLeft="15dp"/>
+    <Button
+        android:id="@+id/postulEmploi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="#277EC0"
+        android:text="    POSTULER L'OFFRE    "
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_emploi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

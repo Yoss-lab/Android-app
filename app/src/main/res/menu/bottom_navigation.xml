@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigationHisto"
+        android:icon="@drawable/historique"
+        android:title="Historique"/>
+
+    <item
+    android:id="@+id/navigationEvent"
+    android:icon="@drawable/event"
+    android:title="Evenement"/>
+
+    <item
+        android:id="@+id/navigationHome"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+    android:id="@+id/navigationPrice"
+    android:icon="@drawable/price"
+    android:title="Prix"/>
+
+    <item
+        android:id="@+id/navigationStatic"
+        android:icon="@drawable/statistic"
+        android:title="Statistique"/>
+
+
+
+
+
+</menu>

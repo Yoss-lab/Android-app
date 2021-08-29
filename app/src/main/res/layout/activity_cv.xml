@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="hatem.ali.leoni.activities.CvActivity">
+
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!--  photo   -->
+        <RelativeLayout
+            android:id="@+id/layoutPicture"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/picture"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:src="@drawable/logo" />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fabChoosePic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+
+                android:src="@drawable/ic_picture"
+                app:fabSize="mini"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INFORMATIONS PERSONNELLE"
+            android:textSize="20sp"
+            />
+        <TextView
+            android:id="@+id/cvid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+
+            android:backgroundTint="@color/colorPrimary"
+            android:hint=" id"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <EditText
+                android:id="@+id/nomcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:singleLine="true"
+                android:backgroundTint="@color/colorPrimary"
+                android:layout_weight="0.5"
+                android:hint=" Nom"/>
+
+            <EditText
+                android:id="@+id/prenomcv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="0.5"
+                android:backgroundTint="@color/colorPrimary"
+                android:singleLine="true"
+                android:hint=" Prenom"/>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cvnaiss"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" JJ/MM/AAAA "
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/cvville"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:hint=" Ville"/>
+
+        <EditText
+            android:id="@+id/cvpostal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" Code Postal"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cvAdresse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="2"
+            android:hint=" rue-exemple,exemple"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <EditText
+            android:id="@+id/cvphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1"
+            android:hint=" N° tel "/>
+
+        <EditText
+            android:id="@+id/cvphone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" Tel "/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cvemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" E-mail "/>
+
+        <EditText
+            android:id="@+id/cvsite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" Site "/>
+
+        <EditText
+            android:id="@+id/cvin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:singleLine="true"
+            android:hint=" Linked In "/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDUCATIONS"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/cveducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="3"
+            android:hint=" année / Edducation \n année / Edducation"/>
+
+
+        <EditText
+            android:id="@+id/cvexper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="3"
+            android:hint=" .......... \n .........."/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="COMPETANCE"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/cvCompetence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="3"
+            android:hint=" Competence 1\n Competence 2"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SYSTEME INFORMATIQUE"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/cvCompINFO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="3"
+            android:hint=" Competence 1\n Competence 2"/>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LANGUES"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/cvlangue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:minLines="3"
+            android:hint=" Langue 1\n Langue 2"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@drawable/centre_button"
+        android:text="send"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/whiteTextColor" />
+
+
+
+    </LinearLayout>
+</ScrollView>
+
+
+</LinearLayout>

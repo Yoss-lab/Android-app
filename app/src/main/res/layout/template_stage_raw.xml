@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutstage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/tittle_stage"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="titre stage" />
+
+    <TextView
+        android:id="@+id/desc_stage"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="description stage" />
+
+    <TextView
+        android:id="@+id/by"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="annoce de " />
+
+    </LinearLayout>
+</LinearLayout>

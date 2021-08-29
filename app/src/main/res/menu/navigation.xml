@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_back"
+        android:icon="@drawable/baseline_arrow_back_black_18dp"
+        android:title="title_back" />
+
+    <item
+        android:id="@+id/navigation_usb"
+        android:icon="@drawable/baseline_arrow_back_black_18dp"
+        android:title="title_usb" />
+
+    <item
+        android:id="@+id/navigation_logo"
+        android:icon="@drawable/baseline_arrow_back_black_18dp"
+        android:title="title_logo" />
+
+</menu>

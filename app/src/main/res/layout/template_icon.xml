@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    tools:context="hatem.ali.leoni.activities.MainActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/leoni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial_black"
+        android:gravity="fill_vertical"
+        android:text="LEONI"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/corporate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/arial"
+        android:gravity="fill_vertical"
+        android:text="CORPORATE"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/leoni"
+        app:layout_constraintStart_toEndOf="@id/leoni"
+        app:layout_constraintTop_toTopOf="@id/leoni"
+        app:layout_constraintVertical_bias="0.78" />
+
+    <LinearLayout
+        android:id="@+id/relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <ImageView
+            android:id="@+id/icon_fb"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/facebook" />
+
+        <View
+            android:id="@+id/view_vertical_1"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_yt"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/youtube" />
+
+        <View
+            android:id="@+id/view_vertical_2"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_in"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/linkedin" />
+
+        <View
+            android:id="@+id/view_vertical_3"
+            android:layout_width="0.1dp"
+            android:layout_height="fill_parent"
+            android:background="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/icon_inst"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/instagram" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
